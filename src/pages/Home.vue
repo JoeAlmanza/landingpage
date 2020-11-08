@@ -31,19 +31,24 @@
           </h5>
         </div>
       </div>
+
       <div class="row justify-content-center skillsRow">
         <h2 class="mb-4"><u>Technologies and Tools</u></h2>
         <img src="../assets/Icons.png" alt="" />
       </div>
+
       <div class="row justify-content-around appRow text-light">
         <h2 class="col-12 mb-4 text-center"><u>Applications</u></h2>
         <div class="col-3">
+          <h4>Bug-Log</h4>
           <img class="appImg" src="../assets/BugLogImg.png" alt="" />
         </div>
         <div class="col-3">
+          <h4>Keepr</h4>
           <img class="appImg" src="../assets/KeeprImg.png" alt="" />
         </div>
         <div class="col-3">
+          <h4>PetPal</h4>
           <img class="appImg" src="../assets/PetPalImg.png" alt="" />
         </div>
       </div>
@@ -85,6 +90,7 @@ img {
   padding-bottom: 3rem;
 }
 .appImg {
-  max-height: 9rem;
+  max-height: 10rem;
+  max-width: 250px;
 }
 </style>
