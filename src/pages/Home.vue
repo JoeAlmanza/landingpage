@@ -44,14 +44,38 @@
 
       <div class="row justify-content-around appRow text-light" id="portfolio">
         <h2 class="col-12 mb-4 text-center"><u>Applications</u></h2>
-        <a class="card text-center" href="https://bug-log89.herokuapp.com/">
+        <a
+          class="contents card text-center"
+          href="https://bug-log89.herokuapp.com/"
+        >
           <img class="appImg" src="../assets/BugLogImg.png" alt="" />
+          <div class="overlay text-center text-light p-1">
+            <h4>Bug-Log</h4>
+            <h5>Vue.js, .Net, MongoDB</h5>
+            <p>Description Here</p>
+          </div>
         </a>
-        <a class="card text-center" href="https://keepr20.herokuapp.com/">
+        <a
+          class="contents card text-center"
+          href="https://keepr20.herokuapp.com/"
+        >
           <img class="appImg" src="../assets/KeeprImg.png" alt="" />
+          <div class="overlay text-center text-light p-1">
+            <h4>Keepr</h4>
+            <h5>Vue.js, .Net, MongoDB</h5>
+            <p>Description Here</p>
+          </div>
         </a>
-        <a class="card text-center" href="https://petpal7.herokuapp.com/">
+        <a
+          class="contents card text-center"
+          href="https://petpal7.herokuapp.com/"
+        >
           <img class="appImg" src="../assets/PetPalImg.png" alt="" />
+          <div class="overlay text-center text-light p-1">
+            <h4>Pet-Pal</h4>
+            <h5>Vue.js, .Net, MongoDB</h5>
+            <p>Description Here</p>
+          </div>
         </a>
       </div>
     </div>
@@ -95,22 +119,17 @@ img {
   max-height: 10rem;
   max-width: 20rem;
 }
-.tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
-  text-shadow: 1px 1px black;
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  background-color: black;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-
-  /* Position the tooltip */
+.overlay {
   position: absolute;
-  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #040607b9;
+}
+.contents:hover .overlay {
+  opacity: 1;
 }
 </style>
