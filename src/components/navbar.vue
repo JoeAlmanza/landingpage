@@ -1,7 +1,10 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top flex-column">
+  <nav
+    class="navbar navbar-expand-lg navbar-dark fixed-top flex-column"
+    id="navbar"
+  >
     <router-link class="navbar-brand d-flex m-auto" :to="{ name: 'Home' }">
-      <div>
+      <div class="text-center">
         <img src="../assets/name2.png" alt="" />
       </div>
     </router-link>
@@ -18,26 +21,18 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav mr-auto text-light text-shadow">
-        <li class="nav-item" :class="{ active: $route.name == 'About' }">
-          <router-link :to="{ name: 'Home' }" class="nav-link"
-            >About</router-link
-          >
-        </li>
-        <li class="nav-item" :class="{ active: $route.name == 'Skills' }">
-          <router-link :to="{ name: 'Home' }" class="nav-link"
-            >Skills</router-link
-          >
-        </li>
-        <li class="nav-item" :class="{ active: $route.name == 'Portfolio' }">
-          <router-link :to="{ name: 'Home' }" class="nav-link"
-            >Portfolio</router-link
-          >
-        </li>
-        <li class="nav-item" :class="{ active: $route.name == 'Contact' }">
-          <router-link :to="{ name: 'Home' }" class="nav-link"
-            >Contact</router-link
-          >
-        </li>
+        <a class="nav-link" href="#about">
+          About
+        </a>
+        <a class="nav-link" href="#skills">
+          Skills
+        </a>
+        <a class="nav-link" href="#portfolio">
+          Portfolio
+        </a>
+        <a class="nav-link" href="#contact">
+          Contact
+        </a>
       </ul>
     </div>
   </nav>

@@ -1,6 +1,11 @@
 <template>
   <div class="home">
-    <div class="container-fluid bg-image">
+    <div
+      class="container-fluid bg-image"
+      data-spy="scroll"
+      data-target="#navbar"
+      data-offset="0"
+    >
       <div class="row justify-content-center align-items-center mainRow">
         <div class="col-lg-10 d-flex justify-content-center">
           <h1 class="text-center text-light">
@@ -10,7 +15,7 @@
           </h1>
         </div>
       </div>
-      <div class="row justify-content-center aboutRow">
+      <div class="row justify-content-center aboutRow" id="about">
         <div class="col-lg-10 text-center text-light">
           <h2 class="mb-0">About Me</h2>
           <h2>_____</h2>
@@ -32,25 +37,22 @@
         </div>
       </div>
 
-      <div class="row justify-content-center skillsRow">
+      <div class="row justify-content-center skillsRow" id="skills">
         <h2 class="mb-4"><u>Technologies and Tools</u></h2>
         <img src="../assets/Icons.png" alt="" />
       </div>
 
-      <div class="row justify-content-around appRow text-light">
+      <div class="row justify-content-around appRow text-light" id="portfolio">
         <h2 class="col-12 mb-4 text-center"><u>Applications</u></h2>
-        <div class="col-3">
-          <h4>Bug-Log</h4>
+        <a class="card text-center" href="https://bug-log89.herokuapp.com/">
           <img class="appImg" src="../assets/BugLogImg.png" alt="" />
-        </div>
-        <div class="col-3">
-          <h4>Keepr</h4>
+        </a>
+        <a class="card text-center" href="https://keepr20.herokuapp.com/">
           <img class="appImg" src="../assets/KeeprImg.png" alt="" />
-        </div>
-        <div class="col-3">
-          <h4>PetPal</h4>
+        </a>
+        <a class="card text-center" href="https://petpal7.herokuapp.com/">
           <img class="appImg" src="../assets/PetPalImg.png" alt="" />
-        </div>
+        </a>
       </div>
     </div>
   </div>
@@ -85,12 +87,30 @@ img {
   max-width: 80%;
 }
 .appRow {
-  background-color: rgb(0, 59, 87);
+  background-color: rgb(0, 0, 0);
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
 .appImg {
   max-height: 10rem;
-  max-width: 250px;
+  max-width: 20rem;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  text-shadow: 1px 1px black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
 }
 </style>
