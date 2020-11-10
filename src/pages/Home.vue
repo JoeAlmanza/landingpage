@@ -99,17 +99,34 @@
       </div>
 
       <div class="row justify-content-center contactRow" id="contact">
-        <div class="col-10  text-center text-light">
+        <div class="col-12 text-center text-light">
           <h2 class=""><u>Contact Me!</u></h2>
           <h2>_____</h2>
-          <h5 class="mt-4">If you like what you see, let me know!</h5>
-          <div class="col-5">
-            <a class="" :href="'mailto:JoeAlmanza2113@gmail.com'">
-              <i class="fa fa-envelope-o" aria-hidden="true"></i>
-              "JoeAlmanza2113@gmail.com"
-            </a>
-          </div>
-          <div class="col-5"></div>
+          <h5 class="my-4">If you like what you see, let me know!</h5>
+        </div>
+        <div class="col-4 pt-4 mx-0 text-center">
+          <a class="my-4" :href="'mailto:JoeAlmanza2113@gmail.com'">
+            <i
+              class="fa fa-envelope-o contactImg text-light"
+              aria-hidden="true"
+            ></i>
+            <br />
+            <h5 class="text-light">JoeAlmanza2113@gmail.com</h5>
+          </a>
+        </div>
+
+        <div class="col-4 pt-4 mx-0 text-center">
+          <a
+            class="my-4"
+            onclick="location.href='joealmanza.github.io/Joe-Almanza/';"
+          >
+            <i
+              class="fa fa-file-text-o contactImg text-light"
+              aria-hidden="true"
+            ></i>
+            <br />
+            <h5 class="text-light">Resume & More Info...</h5>
+          </a>
         </div>
       </div>
     </div>
@@ -171,5 +188,11 @@ img {
   background-color: #000046;
   padding-top: 5rem;
   padding-bottom: 5rem;
+}
+.contactImg {
+  font-size: 3em;
+}
+a {
+  cursor: pointer;
 }
 </style>
