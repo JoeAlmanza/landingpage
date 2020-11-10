@@ -38,45 +38,79 @@
       </div>
 
       <div class="row justify-content-center skillsRow" id="skills">
-        <h2 class="mb-4"><u>Technologies and Tools</u></h2>
-        <img src="../assets/Icons.png" alt="" />
+        <h2 class="col-12 mb-4 text-center">
+          <u>Technologies and Tools</u>
+        </h2>
+        <img src="../assets/Icons.png" class="mt-4" alt="" />
       </div>
 
-      <div class="row justify-content-around appRow text-light" id="portfolio">
-        <h2 class="col-12 mb-4 text-center"><u>Applications</u></h2>
+      <div class="row justify-content-center appRow text-light" id="portfolio">
+        <h2 class="col-12 mb-5 text-center"><u>Applications</u></h2>
         <a
-          class="contents card text-center"
+          class="contents card text-center mx-5 my-2"
           href="https://bug-log89.herokuapp.com/"
         >
           <img class="appImg" src="../assets/BugLogImg.png" alt="" />
           <div class="overlay text-center text-light p-1">
-            <h4>Bug-Log</h4>
+            <h4 class="">Bug-Log</h4>
             <h5>Vue.js, Node.js, MongoDB</h5>
-            <p>Description Here</p>
+            <p>
+              Bug tracker app where users can login, open bugs, add comments,
+              edit bugs and comments, and close bugs.
+            </p>
           </div>
         </a>
         <a
-          class="contents card text-center"
+          class="contents card text-center mx-5 my-2"
           href="https://keepr20.herokuapp.com/"
         >
           <img class="appImg" src="../assets/KeeprImg.png" alt="" />
           <div class="overlay text-center text-light p-1">
-            <h4>Keepr</h4>
+            <h4 class="">Keepr</h4>
             <h5>Vue.js, .Net, MongoDB</h5>
-            <p>Description Here</p>
+            <p>
+              App where users can log in, add images(keeps) and save others'
+              images to public or private vaults.
+            </p>
           </div>
         </a>
         <a
-          class="contents card text-center"
+          class="contents card text-center mx-5 my-2"
           href="https://petpal7.herokuapp.com/"
         >
           <img class="appImg" src="../assets/PetPalImg.png" alt="" />
           <div class="overlay text-center text-light p-1">
-            <h4>Pet-Pal</h4>
+            <h4 class="">Pet-Pal</h4>
             <h5>Vue.js, Node.js, MongoDB</h5>
-            <p>Description Here</p>
+            <p>
+              Card swiping app utilizing nationwide shelter data to help users
+              find adoptable pets in their area and contact the shelters holding
+              the pets.
+            </p>
           </div>
         </a>
+        <h5 class="col-12 text-center mt-5">Check out all my projects here!</h5>
+        <input
+          type="button"
+          class="btn btn-secondary"
+          onclick="location.href='https://github.com/JoeAlmanza';"
+          value="My Github!"
+        />
+      </div>
+
+      <div class="row justify-content-center contactRow" id="contact">
+        <div class="col-10  text-center text-light">
+          <h2 class=""><u>Contact Me!</u></h2>
+          <h2>_____</h2>
+          <h5 class="mt-4">If you like what you see, let me know!</h5>
+          <div class="col-5">
+            <a class="" :href="'mailto:JoeAlmanza2113@gmail.com'">
+              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+              "JoeAlmanza2113@gmail.com"
+            </a>
+          </div>
+          <div class="col-5"></div>
+        </div>
       </div>
     </div>
   </div>
@@ -99,25 +133,25 @@ strong {
   background-size: cover;
 }
 .aboutRow {
-  background-color: rgb(34, 6, 54);
-  padding-top: 5rem;
-  padding-bottom: 6rem;
+  background-color: #220636;
+  padding-top: 6rem;
+  padding-bottom: 7rem;
 }
 .skillsRow {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 img {
   max-width: 80%;
 }
 .appRow {
   background-color: rgb(0, 0, 0);
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 .appImg {
-  max-height: 10rem;
-  max-width: 20rem;
+  max-height: 12rem;
+  max-width: 25rem;
 }
 .overlay {
   position: absolute;
@@ -128,8 +162,14 @@ img {
   opacity: 0;
   transition: 0.5s ease;
   background-color: #040607b9;
+  text-shadow: 1px 1px black;
 }
 .contents:hover .overlay {
   opacity: 1;
+}
+.contactRow {
+  background-color: #000046;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 </style>
