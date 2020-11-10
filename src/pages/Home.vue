@@ -51,7 +51,7 @@
           <img class="appImg" src="../assets/BugLogImg.png" alt="" />
           <div class="overlay text-center text-light p-1">
             <h4>Bug-Log</h4>
-            <h5>Vue.js, .Net, MongoDB</h5>
+            <h5>Vue.js, Node.js, MongoDB</h5>
             <p>Description Here</p>
           </div>
         </a>
@@ -73,7 +73,7 @@
           <img class="appImg" src="../assets/PetPalImg.png" alt="" />
           <div class="overlay text-center text-light p-1">
             <h4>Pet-Pal</h4>
-            <h5>Vue.js, .Net, MongoDB</h5>
+            <h5>Vue.js, Node.js, MongoDB</h5>
             <p>Description Here</p>
           </div>
         </a>
